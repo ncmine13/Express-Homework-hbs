@@ -1,7 +1,85 @@
 body {
-  background-color: #E0F9F9;
-  color: #F0E897;
+  background-color: #072B54;
+  font-family: 'Palanquin', sans-serif;
+}
+.header {
+  background-color: #F7F5DD;
+  height: 70px;
+  margin: 10px 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #071A26;
+}
+.header .welcome {
+  color: #072B54;
+  text-align: center;
+  font-size: 35px;
+}
+.profile {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+.profile h1 {
+  margin: 0px;
+  color: #EAEFF4;
+  letter-spacing: 1px;
+}
+.profile img {
+  border: 10px solid #EAEFF4;
+  border-radius: 3px;
+}
+.profile p {
+  color: #EAEFF4;
+  margin-top: 10px;
+}
+.profile .about {
+  width: 22%;
+  margin-top: 0px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  text-shadow: 2px 1px #071A26;
+}
+h1 {
+  color: #F7F5DD;
+  margin-left: 30px;
+  letter-spacing: 1px;
 }
 .form {
-  background-color: #6E8686;
+  background-color: #EAEFF4;
+  width: 50%;
+  height: 260px;
+  margin-top: 50px;
+  margin-left: 26%;
+  font-family: 'Garamond', serif;
+  border-radius: 3px;
+}
+.form form {
+  float: right;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.form form input {
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.form form #username {
+  float: right;
+  margin: 35px 70px;
+  display: inline-block;
+}
+.form form #password {
+  clear: both;
+  float: right;
+  display: inline-block;
+  margin: 0px 70px;
+}
+.form form .submit {
+  clear: both;
+  float: right;
+  margin: 35px 70px;
+}
+.form form .submit #button {
+  background-color: #F7F5DD;
+  border: none;
+  box-shadow: 1px 1px 2px #6c641c;
 }

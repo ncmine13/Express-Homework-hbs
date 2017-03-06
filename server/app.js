@@ -14,7 +14,7 @@ var users = [{username: "testing", password: 1234}]
 var dataBaseData = [{
 	"username": "Silly Goose",
 	"url": "http://d2fbmjy3x0sdua.cloudfront.net/sites/default/files/styles/hero_cover_bird_page/public/Canada%20Goose_KK_APA_2013_28563_226667_BenjaminSchelling.jpg",
-	"about": "I like to QQUAAACKK and drink milk"
+	"about": "A little something you should know about me: I like to QQUAAACKK and drink milk. Cheers!"
 }]
 
 app.get('/', function(request, response){
@@ -53,7 +53,7 @@ app.post('/profile', function(request, response){
 				response.render('profile', {userdata: dataBaseData})
 				//render home page
 			} else {
-				response.send("Failed to log in");
+				response.render('login', {});
 				//allow them to retry
 			}
 		}

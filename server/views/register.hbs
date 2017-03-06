@@ -1,9 +1,17 @@
-<h1>Register for your account</h1>
+<h1>Please register for your account.</h1>
 
 <div class="form">
 	<form action="/users" method="POST">
-		<input type="text" name="username" placeholder="Your username"/>
-		<input type="text" name="password" placeholder="Your password"/>
-		<input type="submit" value="Sign up!"/>
+		<div class="inputdiv" id="username">
+			<label for="username">Username: </label>
+			<input type="text" name="username" placeholder="Your username"/>
+		</div>
+		<div class="inputdiv" id="password">
+			<label for="password">Password: </label>
+			<input type="text" name="password" placeholder="Your password"/>
+		</div>
+		<div class="submit">
+			<input id="button" type="submit" value="Sign up!"/>
+		</div>
 	</form>
 </div>

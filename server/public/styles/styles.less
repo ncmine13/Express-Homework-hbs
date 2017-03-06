@@ -1,12 +1,101 @@
-@paleBlue: #E0F9F9;
-@darkerBlue: #6E8686;
-@yellow: #F0E897;
+@paleBlue: #EAEFF4;
+@darkerBlue: #072B54;
+@yellow: #F7F5DD;
 
 body {
-	background-color: @paleBlue;
+	background-color: @darkerBlue;
+	font-family: 'Palanquin', sans-serif;
+}
+
+.header {
+	background-color: @yellow;
+	height: 70px;
+	margin: 10px 30px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #071A26;
+
+	.welcome {
+		color: @darkerBlue;
+		text-align: center;
+		font-size: 35px;
+	}
+}
+
+.profile {
+	margin-left: 40px;
+	margin-top: 25px;
+
+	h1 {
+		margin: 0px;
+		color: @paleBlue;
+		letter-spacing: 1px;
+	}
+	img {
+		border: 10px solid @paleBlue;
+		border-radius: 3px;
+	}
+
+	p {
+		color: @paleBlue;
+		margin-top: 10px;
+	}
+	.about {
+		width: 22%;
+		margin-top: 0px;
+		margin-left: 15px;
+		letter-spacing: 1px;
+		text-shadow: 2px 1px #071A26;
+	}
+}
+
+h1 {
 	color: @yellow;
+	margin-left: 30px;
+	letter-spacing: 1px;
 }
 
 .form {
-	background-color: @darkerBlue;
+	background-color: @paleBlue;
+	width: 50%;
+	height: 260px;
+	margin-top: 50px;
+	margin-left: 26%;
+	font-family: 'Garamond', serif;
+	border-radius: 3px;
+
+	form {
+		float:right;
+		font-size: 25px;
+    	letter-spacing: 1px;
+
+		input {
+			padding: 10px 15px;
+			font-size: 15px;
+			border-radius: 3px;
+		}
+		#username {
+			float: right;
+			margin: 35px 70px;
+			display: inline-block;
+		}
+		#password {
+			clear:both;
+			float:right;
+			display: inline-block;
+			margin: 0px 70px;
+		}
+
+		.submit {
+			clear:both;
+			float: right;
+			margin: 35px 70px;
+
+			#button {
+				background-color: @yellow;
+				border: none;
+				box-shadow: 1px 1px 2px #6c641c;
+			}
+
+		}
+	}
 }

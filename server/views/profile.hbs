@@ -1,7 +1,13 @@
-<h1>Lala</h1>
+<div class="header">
+	<h1 class="welcome">Welcome home!</h1>
+</div>
 
+<div class="profile">
 	{{#each userdata}}
 		<img src={{this.url}} alt="" height="200px" width="200px">
-		<h1>{{this.username}}</h1>
-		<p>{{this.about}}</p>
+		<h1>Hi, {{this.username}}!</h1>
+		<div class="about">
+			<p>{{this.about}}</p>
+		</div>
 	{{/each}}
+</div>
